@@ -4,10 +4,145 @@
 
 
 
-
-
-
-
+.shop{
+  min-height: 100%;
+  padding: 242px 0;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1620px;
+    min-height: 908px;
+  }
+}
+.shop__logo{
+  padding-left: 80px;
+  &-title{
+    display: block;
+    padding-left: 80px;
+    color: #f3f3f3;
+    margin-bottom: 120px;
+  }
+}
+.menu__sidebar{
+  background-color: rgb(29, 33, 44);
+  border-radius: 20px;
+  max-width: 509px;
+  width: 100%;
+  padding: 80px 0;
+  &-title{
+    display: block;
+    color: #f3f3f3;
+    padding-left: 80px;
+    transition: all .3s;
+    padding: 7px 0px 8px 80px;
+    & + &{
+      margin-top: 35px;
+    }
+    &:hover{
+      background-color: #0bf1ff;
+      border-radius: 0 5px 5px 0;
+      color: #1a1d27;
+    }
+  }
+}
+.menu__sidebar-title.tab--active{
+  background-color: #0bf1ff;
+  border-radius: 0 5px 5px 0;
+  color: #1a1d27;
+}
+.shop__content{
+  position: relative;
+  max-width: 1094px;
+  width: 100%;
+  background-color: rgb(29, 33, 44);
+  border-radius: 20px;
+  padding: 67px 88px 77px 77px;
+}
+.shop__items{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-left: -10px;
+}
+.shop__item{
+  position: relative;
+  background-color: #1a1d25;
+  border-radius: 20px;
+  width: 303px;
+  height: 303px;
+  text-align: center;
+  padding: 25px 0;
+  margin-bottom: 30px;
+  flex-basis: calc(33.3333% - 10px);
+  margin-left: 10px;
+  &-price{
+    color: rgba(235, 235, 235, 0.671);
+  }
+  &-icon{
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+  }
+  &-title{
+    color: #ebebeb;
+    margin-bottom: 10px;
+  }
+  &-btn{
+    position: absolute;
+    bottom: -9%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    border-radius: 25px;
+    padding: 3px 45px 8px;
+    color: #1a1d25;
+    background-color: #0bf1ff;
+    cursor: pointer;
+  }
+}
+.tabs-content{
+  display: none;
+}
+.tabs-content.tabs-content--active{
+  display: block;
+}
+.money__box{
+  text-align: right;
+  position: absolute;
+  bottom: 80px;
+  right: 100px;
+  &-cache{
+    margin-bottom: 8px;
+    span{
+      position: relative;
+      &::before{
+        position: absolute;
+        content: '';
+        background-image: url('../images/icons/cache.png');
+        left: -45px;
+        top: -3px;
+        width: 28px;
+        height: 27px;
+      }
+    }
+  }
+  &-bank{
+    span{
+      position: relative;
+      &::before{
+        position: absolute;
+        content: '';
+        background-image: url('../images/icons/bank.png');
+        left: -45px;
+        top: -3px;
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}
 
 
 

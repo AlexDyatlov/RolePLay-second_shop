@@ -1,0 +1,56 @@
+@media(max-width: 1920px){
+  .shop{
+    padding: 80px 0;
+  }
+}
+
+@media(max-width: 1370px){
+  .shop{
+    padding: 30px 0;
+    &__content{
+      max-width: 965px;
+      padding: 50px 25px 25px 40px;
+    }
+    &__inner{
+      min-height: 700px;
+    }
+    &__item{
+      height: 280px;
+      &-icon{
+        margin: 15px 0;
+      }
+    }
+  }
+  .shop__logo {
+    padding-left: 40px;
+    &-title{
+      padding-left: 40px;
+      margin-bottom: 60px;
+    }
+  }
+  .money__box {
+    bottom: 25px;
+    right: 20px;
+  }
+  .menu__sidebar {
+    max-width: 355px;
+    padding: 50px 0;
+    &-title{
+      padding: 7px 0 8px 40px;
+      &+&{
+        margin-top: 20px;
+      }
+    }
+  }
+  .popup__inner{
+    min-height: 430px;
+    width: 630px;
+    padding-top: 85px;
+    &-form{
+      max-width: 420px;
+    }
+    &-input{
+      width: 290px;
+    }
+  }
+}

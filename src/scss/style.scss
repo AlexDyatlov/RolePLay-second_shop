@@ -2,16 +2,26 @@
 @import 'vars';
 @import 'global';
 
-
-
 .shop{
   min-height: 100%;
   padding: 242px 0;
   &__inner{
+    position: relative;
     display: flex;
     justify-content: space-between;
     max-width: 1620px;
     min-height: 908px;
+    &-btn{
+      position: absolute;
+      background-color: transparent;
+      right: -10px;
+      top: -30px;
+      border: none;
+      cursor: pointer;
+      width: 55px;
+      height: 55px;
+      z-index: 5;
+    }
   }
 }
 .shop__logo{
@@ -225,9 +235,6 @@
   }
 }
 // end popup
-
-
-
 
 
 @import 'media';
